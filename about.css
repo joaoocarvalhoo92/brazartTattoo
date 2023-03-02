@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin-left: 5%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 597px;
+    background: #171717;
+    background: #080808;
+    font-family: 'DM sans';
+}
+
+nav ul li {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+ul,li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    
+}
+nav{
+    margin-top: 40px;
+    cursor: pointer;
+    margin-right: 10%;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a{
+    padding: 10px;
+}
+
+.main{
+    color: white;
+    margin-top: 170px;
+    margin-left: 5%;
+    margin-right: 10%;
+    word-wrap: break-word;
+}
+
+.main h1{
+    text-align: start;
+    line-height: 50px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 550px;
+    padding: 0px 0px 50px;
+}
+footer h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+}
+
+#contact-joao a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+}
+
+
+
+
+
+@media (max-width:600px) {
+    h1{
+        font-size: 1rem;
+        
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+
+    }
+
+    footer h2 {
+        font-size: 0.9rem;
+        line-height: 10px;
+    }
+
+    nav{
+        width: 90%;
+    }
+
+    body{
+        width: 90%;
+    }
+
+    
+}

@@ -16,21 +16,20 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
     <title>Brazart Estudio | Estudio de tatuagem</title>
 </head>
 <body>
 
 <nav>
     <ul>
-        <li><a>SOBRE MIM</a></li>
-        <li><a>TRABALHOS</a></li>
-        <li><a>CONTATO</a></li>
+        <li><a href="about.html">SOBRE MIM</a></li>
+        <li><a href="#works">FOTOS</a></li>
+        <li><a href="#contacts">CONTATO</a></li>
     </ul>
 </nav>
 
+<section class="encapsulamento">
 <section class="perfil">
     <div class="logo-and-button">
         <img id="logo-brazart" src="images/LOGOS/ESCRITA BRAZART BRANCA.png" alt="">
@@ -57,18 +56,18 @@
 
 </section>
 
-<section class="contacts">
+<section class="contacts" id="contacts">
     <h1>
         Contatos Oficiais
     </h1>
     <div class="icons">
-        <img src="images/instagram.svg" alt="">
+        <a target="_blank" href="https://www.instagram.com/jorgebrazart/?igshid=YmMyMTA2M2Y%3D"><img src="images/instagram.svg" alt=""></a>
         <a target="_blank" href="https://wa.me/5511994287892"><img src="images/whats.svg" alt=""></a>
     </div>
 </section>
 
-
-<section class="works">
+</section>
+<section class="works" id="works">
     <h1>Alguns dos meus trabalhos</h1>
     <div class="wrapper">
         <div class="carousel owl-carousel">
@@ -92,6 +91,9 @@
             </div>
         </div>
     </div>
+    <div class="button-works">
+        <button id="budget-works"><a target="_blank" href="works.html">VEJA MAIS FOTOS</a></button>
+    </div>
 </section>
 
 <section class="structure">
@@ -102,7 +104,7 @@
 </section>
 
 
-<section class="form">
+<section class="form"  id="form">
     <div class="form-text">
         <h1>
             Agende um horário
@@ -115,7 +117,7 @@
     <div class="form-inputs">
         <input type="text" placeholder="Nome">
         <input type="text" placeholder="Sobrenome">
-        <input type="email" placeholder="Email">
+        <input name="email" type="email" placeholder="Email">
         <input type="tel" placeholder="Celular">
     </div>
 
@@ -123,14 +125,14 @@
         <textarea placeholder="Mensagem"  name="" id="" cols="30" rows="10"></textarea>
     </div>
 
-    <button id="budget">ENVIAR MENSAGEM</button>
+    <button id="budget-submit">ENVIAR MENSAGEM</button>
 
 </section>
 
 
 <footer>
     <h2>© BRAZART 2023</h2>
-    <h2 id="contact-joao"><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/">Pagina construida por João Carvalho -- Linkedin</a></h2>
+    <h2 id="contact-joao"><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/">Página construida por João Carvalho -- Linkedin</a></h2>
 </footer>
 
 
@@ -152,12 +154,12 @@
 
 
 
-
+<!-- SCRIPT PARA FUNCIONAR O OWL CAROUSEL-->
 
 
     <script>
         $(".carousel").owlCarousel({
-            margin:10,
+            margin:5,
             loop: true,
             autoplay:true,
             autplayTimeout:2000,
@@ -168,7 +170,7 @@
                     nav:false
                 },
                 600:{
-                    items:2,
+                    items:3,
                     nav:false
                 },
                 1000:{

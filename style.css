@@ -21,6 +21,7 @@ button:hover{
     cursor: pointer;
 }
 
+
 /* ------------------MENU TOPO-------------------*/
 
 nav ul li {
@@ -33,6 +34,7 @@ nav ul li {
 ul,li, a{
     list-style-type: none;
     text-decoration: none;
+    color: white;
     
 }
 nav{
@@ -52,6 +54,7 @@ nav ul li a{
 
 
 /*---------------------------------- PERFIL ---------------------------*/
+
 
 
 .picture {
@@ -113,6 +116,23 @@ nav ul li a{
 }
 
 #budget{
+    width: 423px;
+    height: 57px;
+    left: 128px;
+    top: 577px;
+
+    /* Green 2 */
+
+    background: #27AE60;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+#budget-submit{
     width: 423px;
     height: 57px;
     left: 128px;
@@ -242,14 +262,50 @@ nav ul li a{
 
 }
 
-.wrapper{
-    margin-top: 50px;
+
+
+.button-works{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.wrapper img{
-    height: 650px;
-}
+#budget-works{
+    width: 423px;
+    height: 57px;
+    left: 128px;
+    top: 577px;
 
+ 
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+
+        background-image: linear-gradient(to right, #21b4ee, #1b49e0);
+        padding: 5px;
+        box-shadow: 0 0 0 0 #21b4ee;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(33, 180, 238, 0.4);
+        }
+        70% {
+          box-shadow: 0 0 0 20px rgba(33, 180, 238, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(33, 180, 238, 0);
+        }
+      }
+
+#budget-works a{
+    color: white;
+    font-weight: bold;
+}
 
 
 
@@ -261,6 +317,13 @@ nav ul li a{
 
 
 
+.wrapper{
+    margin-top: 50px;
+}
+
+.wrapper img{
+    height: 650px;
+}
 
 
 .wrapper .crousel{
@@ -409,7 +472,6 @@ nav ul li a{
 }
 
 
-
 /*----------------- RODAPÉ-------------------------*/
 
 
@@ -449,3 +511,326 @@ footer h2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- RESPONSIVIDADE DO SITE-----------------------------*/
+
+@media screen and (max-width:700px) {
+    body{
+        width: 85%;
+        margin-left: 0%;
+        margin-right: 0%;
+        height: 1000px;
+      
+    
+    
+    }
+
+    .encapsulamento{
+        margin-left: 10%;
+    }
+/* -------------------------------- INICIO PERFIL --------------------------*/
+    .perfil{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo-brazart{
+        width: 100%;
+
+    }
+
+   
+
+   .picture{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 2%;
+    display: none;
+   }
+
+ 
+   #picture-perfil{
+   
+    width:150%;
+    height: auto;
+   }
+
+   .picture h1{
+    margin-left: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+   }
+
+   .logo-and-button h3{
+    margin-left: 0%;
+    width: 100%;
+    font-size: 0.9rem;
+   }
+
+   #budget{
+    width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+   
+   }
+
+ 
+
+
+
+   nav li a {
+    font-size: 1rem;
+   }
+
+/* -------------------------------- SEÇÃO QUEM SOU EU--------------------------*/
+
+.me{
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.me h1 {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.me h3{
+    font-size: 1rem;
+    line-height: 30px;
+
+}
+
+
+/* -------------------------------- SEÇÃO CONTATOS OFICIAIS-------------------------*/
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 200px;
+
+    
+}
+.contacts h1{
+width: 90%;
+margin-left: 2%;
+font-size: 1.2rem;
+}
+
+.icons img{
+    width: 50%;
+    margin-left: 20%;
+   
+}
+
+
+
+
+
+
+/*--------------------------------------------- SEÇÃO TRABALHOS----------------------------------------*/
+
+.works{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 100px;
+
+}
+
+.works h1{
+    font-size: 2rem;
+}
+
+.wrapper{
+    margin-top: 10px;
+}
+
+
+/* ---------------- OWL CAROUSEL -------------------*/
+
+.wrapper img{
+    height: 700px;
+}
+
+
+.wrapper .crousel{
+    max-width: 100%;
+    margin: auto;
+    padding: 0 30px;
+
+}
+
+
+
+
+
+.owl-dots{
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0px;
+    border: 2px solid #27AE60!important;
+    
+}
+
+.owl-dot:hover{
+    background-color: #27AE60!important;
+}
+
+
+.button-works{
+    margin-top: 40px;
+}
+
+#budget-works{
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+
+/* ---------------- SEÇÃO ESTRUTURA -------------------*/
+
+
+
+
+
+
+
+/* ---------------- SEÇÃO FORMULARIO -------------------*/
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-text{
+    display: flex;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column; 
+    width: 90%;
+}
+
+.form-inputs input{
+    width: 100%;
+}
+
+.form-text h3{
+    margin-left: 10%;
+}
+
+textarea{
+    width: 100%;
+}
+
+.messenger{
+    width: 100%;
+    margin-left: 10%;
+}
+
+#budget {
+    margin-left: 0%;
+}
+
+#budget-submit{
+    margin-left: 10%;
+    width: 423px;
+    height: 57px;
+    left: 128px;
+    top: 577px;
+
+    /* Green 2 */
+
+    background: #27AE60;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+    margin-top: 20px;
+
+    width: 100%;
+    height: auto;
+    font-size: 0.9rem;
+}
+
+
+
+/*---------------------------------------------RODAPÉ----------------------------------*/
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
