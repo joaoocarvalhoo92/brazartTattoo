@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tatuador profissional especializado em tatuagens realistas e em preto e branco. Agende já uma sessão.">
+    <meta name="keywords" content="tatuagem, tatuador, realismo, preto e branco, agendamento">
+    <meta name="robots" content="index, follow">
+    <!-- <meta name="canonical" content="https://www.brazartestudio.com.br/tatuador"> -->
+    <!--  FONTES GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@300;700&family=Raleway:wght@200;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- CAROUSEL-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Brazart Estudio | Estudio de tatuagem</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a>SOBRE MIM</a></li>
+        <li><a>TRABALHOS</a></li>
+        <li><a>CONTATO</a></li>
+    </ul>
+</nav>
+
+<section class="perfil">
+    <div class="logo-and-button">
+        <img id="logo-brazart" src="images/LOGOS/ESCRITA BRAZART BRANCA.png" alt="">
+        <h3>Estúdio de tatuagem privado</h3>
+        <button id="budget"><a target="_blank" href="https://wa.me/5511994287892">FAÇA SEU ORÇAMENTO AGORA</a></button>
+    </div>
+    <div class="picture">
+        <img id="picture-perfil" src="images/fotoperfil.svg" alt="">
+        <h1>JORGE BRAZART</h1>
+    </div>
+</section>
+
+<section class="me">
+    <h1>
+        Quem sou eu?
+    </h1>
+    <h3>
+        Meu nome é Jorge Brazart, tenho 28 anos e sou um tatuador apaixonado pela arte da<br>
+        tatuagem. Com quase 10 anos de experiência na indústria, dediquei minha vida a aprimorar<br>
+        minhas habilidades e desenvolver meu próprio estilo artístico. Sou proprietário do Brazart,<br>
+        meu estúdio de tatuagem. Meu objetivo é continuar deixando minha marca na indústria<br>
+        da tatuagem e inspirando outras pessoas a explorarem sua criatividade.
+    </h3>
+
+</section>
+
+<section class="contacts">
+    <h1>
+        Contatos Oficiais
+    </h1>
+    <div class="icons">
+        <img src="images/instagram.svg" alt="">
+        <a target="_blank" href="https://wa.me/5511994287892"><img src="images/whats.svg" alt=""></a>
+    </div>
+</section>
+
+
+<section class="works">
+    <h1>Alguns dos meus trabalhos</h1>
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
+            <div class="card card1">
+                <img src="./images/foto1.svg" alt="">
+            </div>
+            <div class="card card2">
+                <img src="./images/foto2.svg" alt="">
+            </div>
+            <div class="card card3">
+                <img src="./images/foto3.svg" alt="">
+            </div>
+            <div class="card card4">
+                <img src="./images/foto4.svg" alt="">
+            </div>
+            <div class="card card4">
+                <img src="./images/foto5.svg" alt="">
+            </div>
+            <div class="card card4">
+                <img src="./images/foto6.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="structure">
+    <h1>
+        Conheça nossa estrutura
+    </h1>
+
+</section>
+
+
+<section class="form">
+    <div class="form-text">
+        <h1>
+            Agende um horário
+        </h1>
+        <h3>
+            Em breve entrarei em contato com você.
+        </h3>
+    </div>
+
+    <div class="form-inputs">
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Sobrenome">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Celular">
+    </div>
+
+    <div class="messenger">
+        <textarea placeholder="Mensagem"  name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <button id="budget">ENVIAR MENSAGEM</button>
+
+</section>
+
+
+<footer>
+    <h2>© BRAZART 2023</h2>
+    <h2 id="contact-joao"><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/">Pagina construida por João Carvalho -- Linkedin</a></h2>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        $(".carousel").owlCarousel({
+            margin:10,
+            loop: true,
+            autoplay:true,
+            autplayTimeout:2000,
+            autoplayHoverpause:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:false
+                },
+                600:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:false
+                }
+            }
+        });
+    </script>
+    
+</body>
+</html>

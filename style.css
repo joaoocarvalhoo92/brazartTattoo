@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-sizing: border-box;
+    width: 1440px;
+    height: 5970px;
+
+    background: #171717;
+    background: #080808;
+    font-family: 'DM sans';
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* ------------------MENU TOPO-------------------*/
+
+nav ul li {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+ul,li, a{
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+nav{
+    margin-top: 40px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li a{
+    padding: 10px;
+}
+
+
+
+
+/*---------------------------------- PERFIL ---------------------------*/
+
+
+.picture {
+    opacity: 0; /* define a opacidade inicial como 0 */
+    animation-name: fade-in; /* define o nome da animação */
+    animation-duration:1.5s; /* define a duração da animação em segundos */
+    animation-delay: 1s; /* define um atraso de 1 segundo para iniciar a animação */
+    animation-fill-mode: forwards; /* define que a animação deve manter o estado final (opacidade 1) após a animação */
+  }
+
+  .logo-and-button {
+    opacity: 0; /* define a opacidade inicial como 0 */
+    animation-name: fade-in; /* define o nome da animação */
+    animation-duration: 5s; /* define a duração da animação em segundos */
+    animation-delay: 0.5s; /* define um atraso de 1 segundo para iniciar a animação */
+    animation-fill-mode: forwards; /* define que a animação deve manter o estado final (opacidade 1) após a animação */
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; } /* define o estado inicial da animação (opacidade 0) */
+    to { opacity: 1; } /* define o estado final da animação (opacidade 1) */
+  }
+
+
+.perfil{
+    display: flex;
+    margin-top: 187px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-brazart{
+    width: 600px;
+    height: auto;
+    
+}
+
+#picture-perfil{
+    width: 650px;
+    height: 650px;
+    left: 702px;
+    top: 187px;
+}
+
+.perfil h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #828282;
+    margin-top:20px;
+    margin-left: 10px;
+   
+}
+
+.logo-and-button{
+    display: flex;
+    flex-direction: column;
+}
+
+#budget{
+    width: 423px;
+    height: 57px;
+    left: 128px;
+    top: 577px;
+
+    /* Green 2 */
+
+    background: #27AE60;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.picture{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.picture h1{
+    margin-top: 50px;
+    margin-left: 180px;
+    font-style: normal;
+    font-size: 40px;
+    /* identical to box height */
+
+
+    color: #ACAAAA;
+}
+
+ .picture img{
+    width: 596.89px;
+    height: 596.89px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 10px rgba(36, 35, 35, 0.5);
+    background-color: #1E1D1D;
+ }
+
+
+ .logo-and-button button a {
+    color: white;
+ }
+
+
+/*---------------------SEÇÃO QUEM SOU EU---------------------*/
+
+.me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 500px;
+}
+
+.me h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.me h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+
+    color: #FFFFFF;
+}
+
+
+/*------------------SEÇÃO CONTATOS-----------------------*/
+
+.contacts{
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.icons{
+    display: flex;
+    margin-top: 30px;
+    
+}
+
+.icons img{
+    margin-left: 60px;
+}
+
+
+
+
+/*---------------SEÇÃO TRABALHOS-----------------*/
+
+.works{
+    margin-top: 500px;
+}
+
+.works h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+}
+
+.wrapper{
+    margin-top: 50px;
+}
+
+.wrapper img{
+    height: 650px;
+}
+
+
+
+
+
+
+
+
+/*------------------ OWL CAROUSEL----------------------------*/
+
+
+
+
+
+.wrapper .crousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+
+}
+
+.carousel .card{
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    margin: 20px 0;
+    
+ 
+}
+
+
+
+
+.owl-dots{
+    text-align: center;
+    margin-top: 40px;
+    
+
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0px;
+    border: 2px solid #27AE60!important;
+    
+}
+
+.owl-dot:hover{
+    background-color: #27AE60!important;
+}
+
+
+
+/* ------------------------------- SEÇÃO ESTRUTURA DO ESTUDIO---------------------------------*/
+
+
+.structure{
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+}
+
+.structure h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+/* ------------------------------- SEÇÃO FORMULARIO--------------------------------*/
+
+.form  {
+    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.form h3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+}
+
+.form-inputs{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 90px;
+    column-gap: 0px;
+    margin-left: 30px;
+    width:900px;
+}
+
+.form-inputs input{
+    background: #080808;
+    width: 390px;
+    border-top:0px;
+    border: 0px;
+    border-bottom: 1px solid #4F4F4F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color:white;
+    
+
+}
+
+.messenger{
+    margin-top: 80px;
+    width: 60%;
+
+}
+
+.messenger textarea{
+    background: #080808;
+    width: 100%;
+    border: 1px solid #4F4F4F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color:white;
+    padding: 10px 0px 0px 10px;
+    height: 150px;
+}
+
+
+
+/*----------------- RODAPÉ-------------------------*/
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 550px;
+    padding: 0px 0px 50px;
+}
+footer h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+}
+
+#contact-joao a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+}
+
+
+
