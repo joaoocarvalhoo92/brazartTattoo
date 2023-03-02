@@ -17,10 +17,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
+    
     <title>Brazart Estudio | Estudio de tatuagem</title>
+    
 </head>
 <body>
-
+    <div class="background">
+        <img src="images/caveiras-wallpaper.jpg" alt="">
+    </div>
 <nav>
     <ul>
         <li><a href="about.html">SOBRE MIM</a></li>
@@ -34,7 +38,7 @@
     <div class="logo-and-button">
         <img id="logo-brazart" src="images/LOGOS/ESCRITA BRAZART BRANCA.png" alt="">
         <h3>Estúdio de tatuagem privado</h3>
-        <button id="budget"><a target="_blank" href="https://wa.me/5511994287892">FAÇA SEU ORÇAMENTO AGORA</a></button>
+        <button  id="budget">ENTRE EM CONTATO</a></button>
     </div>
     <div class="picture">
         <img id="picture-perfil" src="images/fotoperfil.svg" alt="">
@@ -104,7 +108,7 @@
 </section>
 
 
-<section class="form"  id="form">
+<form class="form"  id="form" action="https://formspree.io/f/mdovzlgv" method="POST">
     <div class="form-text">
         <h1>
             Agende um horário
@@ -115,20 +119,40 @@
     </div>
 
     <div class="form-inputs">
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="Sobrenome">
-        <input name="email" type="email" placeholder="Email">
-        <input type="tel" placeholder="Celular">
+        <input name="Nome" type="text" placeholder="Nome" required="required">
+        <input name="Sobrenome" type="text" placeholder="Sobrenome" required="required">
+        <input name="Email" type="email" placeholder="Email">
+        <input name="Celular" type="tel" placeholder="Celular" required="required">
     </div>
+    
 
     <div class="messenger">
-        <textarea placeholder="Mensagem"  name="" id="" cols="30" rows="10"></textarea>
+        <textarea placeholder="Mensagem"  name="Mensagem" id="" cols="30" rows="10"></textarea>
     </div>
 
-    <button id="budget-submit">ENVIAR MENSAGEM</button>
+    <button type="submit" id="budget-submit">ENVIAR MENSAGEM</button>
 
-</section>
+</form>
 
+<!------------MODAL ------------->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="https://formspree.io/f/mdovzlgv" method="POST">
+      <label for="nome">Nome</label>
+      <input name="Nome" type="text" id="nome" placeholder="Nome" required="required">
+      <label for="sobrenome">Sobrenome</label>
+      <input name="Sobrenome" type="text" id="sobrenome" placeholder="Sobrenome">
+      <label for="email">Email</label>
+      <input name="Email" type="email" id="email" placeholder="Email">
+      <label for="celular">Celular</label>
+      <input name="Celular" type="tel" id="celular" placeholder="Celular" required="required">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
 
 <footer>
     <h2>© BRAZART 2023</h2>

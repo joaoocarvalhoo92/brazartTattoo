@@ -21,6 +21,108 @@ button:hover{
     cursor: pointer;
 }
 
+.background {
+    /* Define a posição do fundo para centralizado na horizontal e topo na vertical */
+    background-position: center top;
+  
+    /* Define a imagem de fundo em um elemento separado e diminui o brilho */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/caveiras-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(20%);
+    z-index: -1;
+  }
+
+/*------------------------------MODAL--------------------------*/
+
+/* Estilize o modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Estilize o formulário */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+
+
+
+
 
 /* ------------------MENU TOPO-------------------*/
 
@@ -123,7 +225,7 @@ nav ul li a{
 
     /* Green 2 */
 
-    background: #27AE60;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -131,7 +233,13 @@ nav ul li a{
 
     color: #FFFFFF;
     margin-top: 20px;
+    background-image: linear-gradient(to right, #21b4ee, #1b49e0);
+    padding: 5px;
+    box-shadow: 0 0 0 0 #21b4ee;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
 }
+    
 #budget-submit{
     width: 423px;
     height: 57px;
@@ -139,8 +247,6 @@ nav ul li a{
     top: 577px;
 
     /* Green 2 */
-
-    background: #27AE60;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -148,6 +254,13 @@ nav ul li a{
 
     color: #FFFFFF;
     margin-top: 20px;
+
+    background-image: linear-gradient(to right, #21b4ee, #1b49e0);
+    padding: 5px;
+    box-shadow: 0 0 0 0 #21b4ee;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
+
 }
 
 .picture{
@@ -284,11 +397,12 @@ nav ul li a{
     font-size: 24px;
     line-height: 31px;
 
-        background-image: linear-gradient(to right, #21b4ee, #1b49e0);
-        padding: 5px;
-        box-shadow: 0 0 0 0 #21b4ee;
-        animation: pulse 2s infinite;
-    }
+    background-image: linear-gradient(to right, #21b4ee, #1b49e0);
+    padding: 5px;
+    box-shadow: 0 0 0 0 #21b4ee;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
+}
 
     @keyframes pulse {
         0% {
@@ -360,12 +474,12 @@ nav ul li a{
     cursor: pointer;
     outline: none;
     margin: 0px;
-    border: 2px solid #27AE60!important;
+    border: 2px solid #1b49e0!important;
     
 }
 
 .owl-dot:hover{
-    background-color: #27AE60!important;
+    background-color: #1b49e0!important;
 }
 
 
@@ -707,12 +821,12 @@ font-size: 1.2rem;
     cursor: pointer;
     outline: none;
     margin: 0px;
-    border: 2px solid #27AE60!important;
+    border: 2px solid #1b49e0!important;
     
 }
 
 .owl-dot:hover{
-    background-color: #27AE60!important;
+    background-color: #1b49e0!important;
 }
 
 
@@ -783,7 +897,7 @@ textarea{
 
     /* Green 2 */
 
-    background: #27AE60;
+    
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -795,6 +909,11 @@ textarea{
     width: 100%;
     height: auto;
     font-size: 0.9rem;
+    background-image: linear-gradient(to right, #21b4ee, #1b49e0);
+    padding: 5px;
+    box-shadow: 0 0 0 0 #21b4ee;
+    animation: pulse 2s infinite;
+    border-radius: 10px;
 }
 
 
