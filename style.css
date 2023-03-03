@@ -704,8 +704,9 @@ footer h2 {
 
    .picture h1{
     margin-left: 5%;
-    width: 90%;
-    font-size: 1.2rem;
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
    }
 
    .logo-and-button h3{
@@ -765,13 +766,13 @@ footer h2 {
 }
 .contacts h1{
 width: 90%;
-margin-left: 2%;
+margin-left: 5%;
 font-size: 1.2rem;
 }
 
 .icons img{
     width: 50%;
-    margin-left: 20%;
+    margin-left: 50%;
    
 }
 
