@@ -111,6 +111,22 @@ footer h2 {
 }
 
 
+.background {
+    /* Define a posição do fundo para centralizado na horizontal e topo na vertical */
+    background-position: center top;
+  
+    /* Define a imagem de fundo em um elemento separado e diminui o brilho */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/caveiras-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(20%);
+    z-index: -1;
+  }
+
 /* --------------- BOTAO ---------------------*/
 
 .schedule{
