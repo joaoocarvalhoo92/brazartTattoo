@@ -437,7 +437,25 @@ nav ul li a{
 
 /*------------------ OWL CAROUSEL----------------------------*/
 
-
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .owl-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .owl-dot.active {
+    background-color: #000;
+  }
+  
 
 .wrapper{
     margin-top: 50px;

@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1054235008640013');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1054235008640013&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
@@ -74,7 +91,7 @@
 <section class="works" id="works">
     <h1>Alguns dos meus trabalhos</h1>
     <div class="wrapper">
-        <div class="carousel owl-carousel">
+        <div class="carousel owl-carousel" >
             <div class="card card1">
                 <img src="./images/foto1.svg" alt="">
             </div>
@@ -94,6 +111,7 @@
                 <img src="./images/foto6.svg" alt="">
             </div>
         </div>
+        
     </div>
     <div class="button-works">
         <button id="budget-works"><a target="_blank" href="works.html">VEJA MAIS FOTOS</a></button>
