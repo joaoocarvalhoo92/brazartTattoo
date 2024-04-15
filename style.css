@@ -24,11 +24,11 @@ body{
     font-family: 'DM sans';
 }
 
+
 /* Estilos para tornar o vídeo responsivo */
 #video {
-    width: 110%; /* Largura máxima de 100% */
+    width: 100%; /* Largura máxima de 100% */
     height: auto; /* Altura automática */
-
 }
 
 
@@ -698,7 +698,7 @@ footer h2 {
     }
 
     .encapsulamento{
-        margin-left: 10%;
+        margin-left: 5%;
     }
 /* -------------------------------- INICIO PERFIL --------------------------*/
     .perfil{
