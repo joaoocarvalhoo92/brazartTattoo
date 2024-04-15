@@ -87,10 +87,16 @@
 
 
 
-<footer>
-    <h2>© BRAZART 2023</h2>
-    <h2 id="contact-joao"><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/">Pagina construida por João Carvalho -- Linkedin</a></h2>
+<footer class="rodape">
+    <div class="container"></div>
+    <h2>&copy; BRAZART Todos os direitos reservados. - <span id="ano-atual"></span></h2>
+    <h2 id="contact-joao"><a target="_blank" href="https://www.linkedin.com/in/joaocarvalho412753162/">Página construida por João Carvalho -- Linkedin</a></h2>
+</div>
 </footer>
+
+<script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+  </script>
 
 
 
