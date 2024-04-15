@@ -24,6 +24,13 @@ body{
     font-family: 'DM sans';
 }
 
+/* Estilos para tornar o vídeo responsivo */
+#video {
+    width: 100%; /* Largura máxima de 100% */
+    height: auto; /* Altura automática */
+}
+
+
 button:hover{
     cursor: pointer;
 }
