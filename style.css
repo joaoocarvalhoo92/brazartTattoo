@@ -524,6 +524,8 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     margin-top: 400px;
+    width: 100%;
+    margin-left: 0;
 }
 
 .structure h1{
